@@ -1,1 +1,15 @@
 This is an analyis of the effect of immigration on crime.  There are two waves: the first is from asylum seekers and the second is from EU accession countries. The hypothesis says that those with better labor market opportunities will be less likely to embark on crime. The first wave involves people from the former-Yugoslavia and the Middle East, the second wave are the A8 of Poland, Hungary, Czech, Solvakia, Slovenia, Latvia, Lithuania and Estonia. Estonia
+
+There are two sources of data: the 2004 New Deal for Communities Evaluation Survey and the Lbour Force Survey. 
+
+The panel model is 
+
+\Delta(Crime/Pop)_{it} = \beta_1 \Delta (Migrants/Pop)_{it} + \beta_2 \Delta ln (Pop)_{it} + \beta_3 \Delta X_{it} + T_t + \varepsilon_{it}
+
+Crime is the number of nitified offences, Pop is the resident population, Migrants is either the number of asylum seekers or the number of A8 immigrants, X denotes local control variables like percentage of population claiming welfare benefits and share of young adults in the population and T denotes a series of time dummies. In some places there are specific dummies for the 43 police force areas. Crimes are split into violent and property and uniform data start in 2001. WRS immigrant data is cumulated over time to estimate the stock. 
+
+The dispursion of immigration is intresting:  the aslyum seekers are concentrated in particular areas as part of the dispursal policy; the A8 immigrants are more evenly disbursed. 
+
+The data need to be transformed so that they can be put into the panel.  The first step is to create the cumulative wrs data so that this is equivalent to the stock of immigrants.  Which population to use? Look at the code notes. 
+
+I am looking to cumulate hte wrs data so that we have an estimate of the stock.  This is proving to be very difficult. 
