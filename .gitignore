@@ -37,3 +37,5 @@ vignettes/*.pdf
 *.Rproj
 *.rtf
 BFM_Code.do
+*.pdf
+*.todo
