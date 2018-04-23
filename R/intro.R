@@ -8,6 +8,7 @@ require('foreign')
 # to use panel methods
 require('plm')
 da1 <- read.dta('./Data/crime_immig.dta')
+<<<<<<< HEAD
 head(da1, 15)
 # Create the cumulative wrs (to represent a stock). this comes from 
 # https://stackoverflow.com/questions/34756081/apply-function-for-each-subgroup
@@ -47,14 +48,26 @@ summary(eq2)
 # need to add the control variables and the time trend. 
 
 #==============
+=======
+head(da1, n = 10)
+da1$cwrs <- 0
+ifelse(da1$year == 1994, da1$cwrs <- da1$wrs, da1$cwrs <- da1$wrs + lag(da1$cwrs, -1))
+>>>>>>> origin/master
 da2 <- read.dta('./Data/police_arrests.dta')
 head(da2)
 # The description of the data is in ./Data/README.rtf
 da1p <- pdata.frame(da1, index = c('la_code', 'year'), drop.index = TRUE, row.names = TRUE)
 head(da1p)
+<<<<<<< HEAD
 
 
 
 head(da1, 20)
 
 
+=======
+summary(da1p)
+# To create the matrix that will hold the wrs data prior to cumulating. 
+tempmatrix <- t(as.matrix(da1p$wrs))
+head(tempmatrix)
+>>>>>>> origin/master

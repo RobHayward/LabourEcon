@@ -12,6 +12,10 @@ The dispursion of immigration is intresting:  the aslyum seekers are concentrate
 
 The data need to be transformed so that they can be put into the panel.  The first step is to create the cumulative wrs data so that this is equivalent to the stock of immigrants.  Which population to use? Look at the code notes. 
 
+<<<<<<< HEAD
 The wrs data has been cumulate and additional variables created.  The start date is 2002 becuase this is the date from which consistent data is available from. A time trend should be created. 
 
 The standard results from the basic running of the equation is that nether wave of immigrants was associated wtih an incresae in violent crime, that the asylum immigrants are associated wtih a small increase in property crime while teh A8 immigration is associated wtih a small fall in property crimi. These results are robust to a number of local control variables. 
+=======
+I am looking to cumulate hte wrs data so that we have an estimate of the stock.  This is proving to be very difficult. 
+>>>>>>> origin/master
